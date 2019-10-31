@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="25dp"
+        android:src="@drawable/loginbase"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_below="@id/logotext"
+        android:layout_marginHorizontal="150dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="500dp"
+        android:src="@drawable/account" />
+
+    <ImageView
+        android:layout_below="@id/user"
+        android:layout_width="23dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="40dp"
+        android:src="@drawable/busines"/>
+
+    <ImageView
+        android:layout_below="@id/user"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/pass"/>
+
+
+    <TextView
+        android:id="@+id/logotext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text=""
+        android:textColor="#c0c0c0"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:textStyle="bold"/>/>
+
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logotext"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="200dp"
+        android:text="Please Login first to shop"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user"
+        android:hint="Username"
+        android:layout_marginHorizontal="70dp"
+        android:layout_marginTop="15dp" />
+
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user"
+        android:hint="Password"
+        android:layout_marginHorizontal="70dp"
+        android:layout_marginTop="70dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Login"
+               android:layout_marginLeft="40dp"
+                android:id="@+id/btnLogin"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Register"
+                android:id="@+id/btnRegister"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Register"
+                android:layout_marginRight="40dp"
+                android:id="@+id/btnForget"/>
+
+        </LinearLayout>
+        </LinearLayout>
+
+
+</RelativeLayout>
